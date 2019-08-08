@@ -14,12 +14,12 @@ public class App
     public static void main( String[] args ) throws IOException
     {
         
-        SparkSession spark = SparkSession
+        /*SparkSession spark = SparkSession
                 .builder()
                 .appName("Java Spark test")
                 .getOrCreate();
         
-        Dataset<Row> df = spark.read().format("xml").load("hdfs://stub-meta-history/stub-meta-history1.xml");
+        Dataset<Row> df = spark.read().format("xml").load("hdfs://stub-meta-history/stub-meta-history1.xml");*/
         
         System.out.println( "Hello World!" );
     }
