@@ -15,7 +15,7 @@ public class App
     public static void main( String[] args ) throws IOException, SQLException
     {
         
-        if (args.length < 2) {
+        if (args.length < 1) {
             System.out.println("Please give the topic in the arguments");
             System.exit(1);
         }
@@ -31,7 +31,7 @@ public class App
         
         NeighborsPages np = new NeighborsPages();
         
-        int[] neighbors = np.get(args[1]);
+        int[] neighbors = np.get(args[0]);
         for (int i = 0; i < neighbors.length; i++) {
            System.out.println(neighbors[i]);
         }
