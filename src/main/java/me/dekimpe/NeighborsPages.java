@@ -52,7 +52,7 @@ public class NeighborsPages {
         }
 
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://mysql.architect.data:3306/wikipedia", "mysql", "csfirst");
+            conn = DriverManager.getConnection("jdbc:mysql://192.168.10.14:3306/wikipedia", "mysql", "csfirst");
         } catch (SQLException e) {
             e.printStackTrace();
             return;
