@@ -15,6 +15,11 @@ public class App
     public static void main( String[] args ) throws IOException, SQLException
     {
         
+        if (args.length < 2) {
+            System.out.println("Please give the topic in the arguments");
+            System.exit(1);
+        }
+        
         /*SparkSession spark = SparkSession
                 .builder()
                 .appName("Java Spark test")
@@ -26,7 +31,7 @@ public class App
         
         NeighborsPages np = new NeighborsPages();
         
-        int[] neighbors = np.get("19e_gala_Québec_Cinéma");
+        int[] neighbors = np.get(args[1]);
         for (int i = 0; i < neighbors.length; i++) {
            System.out.println(neighbors[i]);
         }
