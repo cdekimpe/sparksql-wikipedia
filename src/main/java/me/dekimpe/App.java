@@ -26,7 +26,7 @@ public class App
         
         NeighborsPages np = new NeighborsPages();
         
-        int[] neighbors = np.get("Anthropology");
+        int[] neighbors = np.get("19e_gala_Québec_Cinéma");
         for (int i = 0; i < neighbors.length; i++) {
            System.out.println(neighbors[i]);
         }
