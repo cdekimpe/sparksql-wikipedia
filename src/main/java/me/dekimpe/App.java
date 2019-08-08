@@ -26,7 +26,7 @@ public class App
         
         NeighborsPages np = new NeighborsPages();
         
-        int[] neighbors = np.get("Anthropologie_marxiste");
+        int[] neighbors = np.get("Anthropology");
         for (int i = 0; i < neighbors.length; i++) {
            System.out.println(neighbors[i]);
         }
