@@ -26,7 +26,7 @@ public class App
         
         NeighborsPages np = new NeighborsPages();
         
-        int[] neighbors = np.get("Cinéma_surréaliste");
+        int[] neighbors = np.get("1637");
         for (int i = 0; i < neighbors.length; i++) {
            System.out.println(neighbors[i]);
         }

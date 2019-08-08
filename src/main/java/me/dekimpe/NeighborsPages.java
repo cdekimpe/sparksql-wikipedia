@@ -33,6 +33,7 @@ public class NeighborsPages {
         int i = 0;
         int[] neighbors = new int[total];
         while (rs.next()) {
+            System.out.println("--- next : " + rs.getInt("pl_from"));
             neighbors[i] = rs.getInt("pl_from");
             i++;
         }
