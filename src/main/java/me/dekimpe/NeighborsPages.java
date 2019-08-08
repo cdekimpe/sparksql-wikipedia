@@ -23,7 +23,7 @@ public class NeighborsPages {
     public int[] get(String title) throws SQLException {
         makeJDBCConnection();
         
-        String query = "SELECT pl_from FROM wikipedia.pagelinks WHERE pl_title = '" + title + "'";
+        String query = "SELECT pl_from FROM wikipedia.pagelinks WHERE pl_title LIKE '%" + title + "%'";
         statement = conn.prepareStatement(query);
         ResultSet rs = statement.executeQuery();
         
